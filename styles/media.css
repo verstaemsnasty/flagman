@@ -58,10 +58,6 @@ desktop: 1200px
         font-size: 20px;
     }
 
-    .hero__btn{
-        margin-bottom: 32px;
-    }
-
     .hero-image__box img{
         top: 0;
         right: 120px;
@@ -987,4 +983,5 @@ desktop: 1200px
         margin-right: 0;
         height: 35px;
     }
+
 }
