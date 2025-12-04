@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <title>Флагман</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/icons/logo.svg" alt="Флагман">
+                </a>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#about">О нас</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#services">Наши услуги</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#testimonials">Отзывы</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header-btn button openpopup" data-modal="modal-contacts" href="#">Записаться</a>
+                <button class="burger-btn">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+        <div class="burger-menu burger--follow">
+            <button class="burger-btn__close"></button>
+            <div class="burger-menu__content">
+                <div class="burger-menu__top">
+                    <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#about">О нас</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#services">Наши услуги</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#testimonials">Отзывы</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header-btn button openpopup" data-modal="modal-contacts" href="#">Записаться</a>
+                </div>
+                <div class="hero__bottom">
+                    <ul class="hero-contacts__list">
+                        <li class="hero-contacts__item">
+                            <div class="hero-contacts__image-box">
+                                <img src="images/icons/time.svg" alt="">
+                            </div>
+                            <div class="hero-contacts__content">
+                                <p class="hero-contacts__title">Режим работы</p>
+                                <p class="hero-contacts__desc">ежедневно <br>с 8:00 до 20:00</p>
+                            </div>
+                        </li>
+                        <span></span>
+                        <li class="hero-contacts__item">
+                            <div class="hero-contacts__image-box">
+                                <img src="images/icons/geo.svg" alt="">
+                            </div>
+                            <div class="hero-contacts__content">
+                                <p class="hero-contacts__title">Адрес</p>
+                                <a class="hero-contacts__address-link" href="https://go.2gis.com/u3jTF" target="_blank">Кострома, <br>ул. Юрия Смирнова 26 "Б"</a>
+                            </div>
+                        </li>
+                        <span></span>
+                        <li class="hero-contacts__item animation">
+                            <div class="hero-contacts__image-box">
+                                <img src="images/icons/support-staff.svg" alt="">
+                            </div>
+                            <div class="hero-contacts__content">
+                                <p class="hero-contacts__title contacts--title">Контакты</p>
+                                <div class="hero-contacts__connecting">
+                                    <div class="hero-contacts__connecting-item">
+                                        <a class="hero-contacts__connecting-link" href="tel:4942461177">
+                                            <img class="hero-contacts__phone-img" src="images/icons/phone.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="hero-contacts__connecting-item">
+                                        <a class="hero-contacts__connecting-link" href="https://t.me/+79159138734" target="_blank">
+                                            <img class="hero-contacts__tg-img" src="images/icons/tg.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="hero-contacts__connecting-item">
+                                        <a class="hero-contacts__connecting-link" href="mailto:Flagman@fs44.ru" target="_blank">
+                                            <img class="hero-contacts__mail-img" src="images/icons/mail.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <main class="content">
+            <section class="hero">
+                <img class="decor decor-gears" src="images/decor/gears.svg" alt="">
+                <img class="decor decor-steam-1-hero" src="images/decor/steam-1-hero.png" alt="">
+                <img class="decor decor-steam-2-hero" src="images/decor/steam-2-hero.png" alt="">
+                <div class="hero__inner container">
+                   <div class="hero__main">
+                        <div class="hero__content">
+                            <h1 class="hero__title animation">Доверьте свой автомобиль профессионалам</h1>
+                            <ul class="hero-advantages__list">
+                                <li class="hero-advantages__item">Бесплатная диагностика при ремонте</li>
+                                <li class="hero-advantages__item">Качественный ремонт</li>
+                                <li class="hero-advantages__item">Гарантия</li>
+                            </ul>
+                            <a class="hero__btn button openpopup" data-modal="modal-contacts" href="#">Узнать стоимость</a>
+                        </div>
+                        <div class="hero-image__box">
+                            <div class="hero-image__car-inner">
+                                <img src="images/hero-car.png" alt="">
+                                <svg width="970" height="164" viewBox="0 0 970 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_f_28_699)">
+                                        <path d="M35.3186 100.979C30.486 100.638 30.3062 93.6053 35.1151 93.0181L538.082 31.6H934.05C938.886 31.6 939.571 38.5849 934.827 39.5239L470.145 131.496C469.797 131.565 469.441 131.587 469.087 131.562L35.3186 100.979Z" fill="black" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_f_28_699" x="9.72748e-05" y="-2.47955e-05" width="969.652" height="163.172" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                        <feGaussianBlur stdDeviation="15.8" result="effect1_foregroundBlur_28_699" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="hero__bottom">
+                        <ul class="hero-contacts__list">
+                            <li class="hero-contacts__item animation">
+                                <div class="hero-contacts__image-box">
+                                    <img src="images/icons/time.svg" alt="">
+                                </div>
+                                <div class="hero-contacts__content">
+                                    <p class="hero-contacts__title">Режим работы</p>
+                                    <p class="hero-contacts__desc">ежедневно <br>с 8:00 до 20:00</p>
+                                </div>
+                            </li>
+                            <li class="hero-contacts__item animation">
+                                <div class="hero-contacts__image-box">
+                                    <img src="images/icons/geo.svg" alt="">
+                                </div>
+                                <div class="hero-contacts__content">
+                                    <p class="hero-contacts__title">Адрес</p>
+                                    <a class="hero-contacts__address-link" href="https://go.2gis.com/u3jTF" target="_blank">Кострома, <br>ул. Юрия Смирнова 26 "Б"</a>
+                                </div>
+                            </li>
+                            <li class="hero-contacts__item animation">
+                                <div class="hero-contacts__image-box">
+                                    <img src="images/icons/support-staff.svg" alt="">
+                                </div>
+                                <div class="hero-contacts__content">
+                                    <p class="hero-contacts__title contacts--title">Контакты</p>
+                                    <div class="hero-contacts__phone">
+                                        <a class="hero-contacts__phone-link" href="tel:4942461177">(4942) 46-11-77</a>
+                                    </div>
+                                    <div class="hero-contacts__connecting">
+                                        <div class="hero-contacts__connecting-item">
+                                            <a class="hero-contacts__connecting-link" href="https://t.me/+79159138734" target="_blank">
+                                                <img class="hero-contacts__tg-img" src="images/icons/tg.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hero-contacts__connecting-item">
+                                            <a class="hero-contacts__connecting-link" href="mailto:Flagman@fs44.ru" target="_blank">
+                                                <img class="hero-contacts__mail-img" src="images/icons/mail.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <img class="decor decor-steam-about" src="images/decor/steam-about.png" alt="">
+                <div class="about__inner container">
+                    <div class="about__main">
+                        <div class="about__content">
+                            <h2 class="about__heading heading animation-heading">Почему выбирают нас</h2>
+                            <ul class="about-advantages__list animation-group">
+                                <li class="about-advantages__item animation-item">Работы выполняют мастера с опытом более 5 лет</li>
+                                <li class="about-advantages__item animation-item">Бесплатная диагностика при ремонте</li>
+                                <li class="about-advantages__item animation-item">Гарантия на все виды работ</li>
+                                <li class="about-advantages__item animation-item">Оригинальные или качественные аналоги зап. частей у наших <a href="#">Партнеров</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-wheel__box">
+                        <img src="images/wheel.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="work section">
+                <img class="decor decor-steam-work" src="images/decor/steam-work.png" alt="">
+                <div class="work__inner container">
+                    <div class="work__heading animation-heading">
+                        <h2 class="heading__title heading">Как мы работаем</h2>
+                        <p class="heading__subtitle">Быстро, просто и без лишних разговоров.</p>
+                    </div>
+                    <div class="work__main">
+                        <div class="work-image__box">
+                            <img src="images/work-car.jpg" alt="">
+                        </div>
+                        <div class="work__content">
+                            <ul class="work-steps__list animation-group">
+                                <li class="work-steps__item animation-item">
+                                    <img src="images/icons/num-1.svg" alt="">
+                                    Вы оставляете заявку или звоните
+                                </li>
+                                <li class="work-steps__item animation-item">
+                                    <img src="images/icons/num-2.svg" alt="">
+                                    Проводим диагностику
+                                </li>
+                                <li class="work-steps__item animation-item">
+                                    <img src="images/icons/num-3.svg" alt="">
+                                    Согласовываем ремонт
+                                </li>
+                                <li class="work-steps__item animation-item">
+                                    <img src="images/icons/num-4.svg" alt="">
+                                    Выполняем ремонт быстро и качественно
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img class="decor-service" src="images/decor/decor-service.svg" alt="">
+            </section>
+            <section class="services section" id="services">
+                <img class="decor-services" src="images/decor/decor-services.png" alt="">
+                <img class="decor decor-steam-services" src="images/decor/steam-services.png" alt="">
+                <div class="services__inner container">
+                    <h2 class="services__heading heading animation-heading">Наши услуги</h2>
+                    <div class="services__wrapper">
+                        <div class="services-cards__slider">
+                            <ul class="services-cards__list animation-group">
+                                <li class="services-card__item animation-item">
+                                    <div class="services-card__inner">
+                                        <div class="services-card__image-box">
+                                            <img src="images/services/1.jpg" alt="Установка доп. оборудования">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <h3 class="services-card__title">Установка доп. оборудования</h3>
+                                            <div class="line"></div>
+                                            <p class="services-card__desc">Монтаж систем сигнализации, парктроник, музыкальных систем</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="services-card__item animation-item">
+                                    <div class="services-card__inner">
+                                        <div class="services-card__image-box">
+                                            <img src="images/services/2.jpg" alt="Системы кондиционирования">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <h3 class="services-card__title">Системы кондиционирования</h3>
+                                            <div class="line"></div>
+                                            <p class="services-card__desc">Ремонт и обслуживание систем кондиционирования</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="services-card__item animation-item">
+                                    <div class="services-card__inner">
+                                        <div class="services-card__image-box">
+                                            <img src="images/services/3.jpg" alt="Автоэлектрика">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <h3 class="services-card__title">Автоэлектрика</h3>
+                                            <div class="line"></div>
+                                            <p class="services-card__desc">Работы по диагностике и ремонту электрооборудования</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="services-card__item animation-item">
+                                    <div class="services-card__inner">
+                                        <div class="services-card__image-box">
+                                            <img src="images/services/4.jpg" alt="Шиномонтаж">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <h3 class="services-card__title">Шиномонтаж</h3>
+                                            <div class="line"></div>
+                                            <p class="services-card__desc">Качественный шиномонтаж, на новейших компьютерных стендах</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="services-card__item animation-item">
+                                    <div class="services-card__inner">
+                                        <div class="services-card__image-box">
+                                            <img src="images/services/5.jpg" alt="Ремонт выхлопной системы">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <h3 class="services-card__title">Ремонт выхлопной системы</h3>
+                                            <div class="line"></div>
+                                            <p class="services-card__desc">Проведение восстановительных работ выхлопной системы</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="services-card__item animation-item">
+                                    <div class="services-card__inner">
+                                        <div class="services-card__image-box">
+                                            <img src="images/services/6.jpg" alt="Ремонт тормозной системы">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <h3 class="services-card__title">Ремонт тормозной системы</h3>
+                                            <div class="line"></div>
+                                            <p class="services-card__desc">Обслуживание и диагностика тормозной системы</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="services-card__item animation-item">
+                                    <div class="services-card__inner">
+                                        <div class="services-card__image-box">
+                                            <img src="images/services/7.jpg" alt="Ремонт двигателя">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <h3 class="services-card__title">Ремонт двигателя</h3>
+                                            <div class="line"></div>
+                                            <p class="services-card__desc">Услуги по диагностике и восстановлению силовых установок</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="services-card__item animation-item">
+                                    <div class="services-card__inner">
+                                        <div class="services-card__image-box">
+                                            <img src="images/services/8.jpg" alt="Ремонт подвески">
+                                        </div>
+                                        <div class="services-card__content">
+                                            <h3 class="services-card__title">Ремонт подвески</h3>
+                                            <div class="line"></div>
+                                            <p class="services-card__desc">Диагностика и ремонтом ходовой части автомобилей различных моделей</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="services__btn center-btn animation-btn">
+                            <a class="button openpopup" data-modal="modal-contacts" href="#">Узнать цену и записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner section">
+                <div class="banner__inner container">
+                    <h2 class="banner__heading heading animation-heading">Наш сервис — открытый и честный</h2>
+                    <div class="banner-content animation-group">
+                        <p class="banner__paragraph animation-item">
+                            Мы показываем, где и как работаем.
+                        </p>
+                        <p class="banner__paragraph animation-item">
+                            Чистые боксы, современный инструмент и опытные мастера — всё как есть, без идеальных картинок.
+                        </p>
+                    </div>
+                    <div class="banner__btn center-btn animation-btn">
+                        <a class="button openpopup" data-modal="modal-contacts" href="#">Записаться</a>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonials section" id="testimonials">
+                <img class="decor decor-steam1-testimonials" src="images/decor/steam1-testimonials.png" alt="">
+                <img class="decor decor-steam2-testimonials" src="images/decor/steam2-testimonials.png" alt="">
+                <div class="testimonials__inner container">
+                    <div class="testimonials__heading animation-heading">
+                        <h2 class="heading__title heading">Что говорят наши клиенты</h2>
+                        <p class="heading__subtitle">Мы дорожим каждым отзывом. <br>Вот реальные мнения людей, которые уже доверили нам свои автомобили:</p>
+                    </div>
+                    <div class="testimonials__slider">
+                        <div class="testimonials-slide">
+                            <div class="testimonials-slide__wrapper">
+                                <div class="testimonials-slide__head">
+                                    <p class="testimonials-slide__name">ЕВГЕНИЙ</p>
+                                    <ul class="testimonials-rating__list">
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <blockquote class="testimonials-slide__text">
+                                    <div class="testimonials-slide__text-inner">
+                                        Был проездом в Костроме, получилось так, что а/м сломался, а был выходной день и вечер. 
+                                        Позвонил в сервис и ребята помогли с эвакуацией и ремонтом а/м, даже ремонт был сделан в этот же день. 
+                                        Большое спасибо Сергею Николаевичу и ребятам, за помощь и качественный ремонт.
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="testimonials-slide">
+                            <div class="testimonials-slide__wrapper">
+                                <div class="testimonials-slide__head">
+                                    <p class="testimonials-slide__name">СЕРГЕЙ</p>
+                                    <ul class="testimonials-rating__list">
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <blockquote class="testimonials-slide__text">
+                                    <div class="testimonials-slide__text-inner">
+                                        Несколько раз обращался с различными неисправностями в автомобиле, во всех случаях оказали 
+                                        помощь в кратчайшие сроки на хорошем уровне. Рекомендую.
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="testimonials-slide">
+                            <div class="testimonials-slide__wrapper">
+                                <div class="testimonials-slide__head">
+                                    <p class="testimonials-slide__name">АЛЕКСАНДР</p>
+                                    <ul class="testimonials-rating__list">
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <blockquote class="testimonials-slide__text">
+                                    <div class="testimonials-slide__text-inner">
+                                        Пользуюсь услугами сервиса с самого начала его образования.  Отзывчивые сотрудники и качественно выполненные 
+                                        работами с гарантией. Пожелания к сервису - стремится дальше развиваться и добиваться успехов.
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="testimonials-slide">
+                            <div class="testimonials-slide__wrapper">
+                                <div class="testimonials-slide__head">
+                                    <p class="testimonials-slide__name">АНАСТАСИЯ</p>
+                                    <ul class="testimonials-rating__list">
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <blockquote class="testimonials-slide__text">
+                                    <div class="testimonials-slide__text-inner">
+                                       Отдавала в ремонт машину впервые в сервис в начале 2025 года, с тех пор по мере приезда домой все вопросы по а/м 
+                                       стараюсь решать тут. Очень удобно, что можно отдать машину и забрать ее в кратчайшие сроки, 
+                                       никаких подводных камней по факту в плане озвучивания ориентировочной цены ремонта и обслуживания, 
+                                       сотрудники очень вежливые и доброжелательные. Как человек, не очень хорошо разбирающийся во всех 
+                                       тонкостях, связанных с ремонтом а/м, хочу отметить, что тут все доступно объясняют и при необходимости покажут. 
+                                       В общем, рекомендую.
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="testimonials-slide">
+                            <div class="testimonials-slide__wrapper">
+                                <div class="testimonials-slide__head">
+                                    <p class="testimonials-slide__name">АЛЕКСЕЙ</p>
+                                    <ul class="testimonials-rating__list">
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                        <li class="testimonials-rating__item">
+                                            <img src="images/icons/star.svg" alt="" aria-hidden="true">
+                                        </li>
+                                    </ul>
+                                </div>
+                               <blockquote class="testimonials-slide__text">
+                                    <div class="testimonials-slide__text-inner">
+                                       Хочу сказать большое спасибо автосервису и всей команде! Работают очень хорошие ребята — внимательно, 
+                                       честно и профессионально. Машину приняли сразу, всё сделали быстро и качественно, без лишних навязанных работ. 
+                                       Отдельная благодарность Сергею — за помощь, подробные объяснения и отличный подход к клиентам. Приятно иметь дело 
+                                       с такими специалистами. Рекомендую!
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq section" id="faq">
+                <img class="decor decor-steam-acc" src="images/decor/steam-acc.png" alt="">
+                <div class="faq__inner container">
+                    <div class="faq__content">
+                        <h2 class="faq__heading heading animation-heading">Частые вопросы</h2>
+                        <ul class="faq-acc__list animation-group">
+                            <li class="faq-acc__item animation-item">
+                                <a class="faq-acc__link" href="#">
+                                    <div class="faq-acc__head">Сколько стоит диагностика?</div>
+                                    <div class="faq-acc__body" style="display: none;">Диагностика стоит недорого, а при ремонте — бесплатно</div>
+                                </a>
+                            </li>
+                            <li class="faq-acc__item animation-item">
+                                <a class="faq-acc__link" href="#">
+                                    <div class="faq-acc__head">Какие запчасти вы используете?</div>
+                                    <div class="faq-acc__body" style="display: none;">По вашему выбору: оригинал или качественные аналоги</div>
+                                </a>
+                            </li>
+                            <li class="faq-acc__item animation-item">
+                                <a class="faq-acc__link" href="#">
+                                    <div class="faq-acc__head">Какие способы оплаты принимаете?</div>
+                                    <div class="faq-acc__body" style="display: none;">Наличные, карты, переводы — как вам удобнее</div>
+                                </a>
+                            </li>
+                            <li class="faq-acc__item animation-item">
+                                <a class="faq-acc__link" href="#">
+                                    <div class="faq-acc__head">Можно ли присутствовать при ремонте?</div>
+                                    <div class="faq-acc__body" style="display: none;">Да, вы можете присутствовать при ремонте при соблюдении техники безопасности</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="consultation-cta">
+                <img class="decor decor-steam-consultation-cta" src="images/decor/steam-consultation-cta.png" alt="">
+                <div class="consultation-cta__inner container animation-group">
+                    <div class="consultation-cta__image-box  animation-item animation-car">
+                        <img src="images/blue-car.png" alt="">
+                    </div>
+                    <div class="consultation-cta__content">
+                        <h2 class="consultation-cta__heading heading animation-heading">Остались вопросы?</h2>
+                        <p class="consultation-cta__text animation-item">Получите бесплатную консультацию по телефону</p>
+                        <div class="consultation-cta__btn animation-btn">
+                            <a class="button openpopup" data-modal="modal-contacts" href="#">Получить консультацию</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-map__image-box">
+                <a class="footer-map__link" href="https://go.2gis.com/u3jTF" target="_blank">
+                    <img src="images/map.jpg" alt="">
+                </a>
+            </div>
+            <div class="footer__inner container">
+                <div class="footer__content">
+                    <div class="footer__head">
+                        <a class="footer__logo" href="#">
+                            <img src="images/icons/logo.svg" alt="Флагман">
+                        </a>
+                        <nav class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#about">О нас</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#services">Наши услуги</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#testimonials">Отзывы</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav__link" href="#faq">FAQ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-contacts">
+                        <p class="footer-contacts__text">Кострома, ул. Юрия Смирнова 26 "Б"</p>
+                        <a class="footer-contacts__tel-link" href="tel:4942461177">(4942) 46-11-77</a>
+                        <p class="footer-contacts__text">ежедневно с 8:00 до 20:00</p>
+                    </div>
+                    <p class="footer-copy">© 2025 Все права защищены</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!--Модальное окно-->
+    <div class="modal-overlay"></div>
+    <div id="modal-contacts" class="modal">
+        <div class="modal__wrapper">
+            <button class="modal-close__btn">
+                <img src="images/icons/close.svg" alt="Закрыть модальное окно">
+            </button>
+            <div class="modal__main">
+                <div class="modal__content">
+                    <p class="modal__title">Мы на связи — выберите, как Вам удобно связаться</p>
+                    <ul class="modal-contacts__list">
+                        <li class="modal-contacts__item">
+                            <div class="modal-contacts__item-icon">
+                                <img src="images/icons/modal-phone.svg" alt="">
+                            </div>
+                            <a class="modal-contacts__link" href="tel:4942461177">(4942) 46-11-77</a>
+                        </li>
+                        <li class="modal-contacts__item">
+                            <div class="modal-contacts__item-icon">
+                                <img src="images/icons/modal-tg.svg" alt="">
+                            </div>
+                            <a class="modal-contacts__link modal-contacts__link--tg" href="https://t.me/+79159138734" target="_blank">Telegram</a>
+                        </li>
+                        <li class="modal-contacts__item">
+                            <div class="modal-contacts__item-icon">
+                                <img src="images/icons/modal-mail.svg" alt="">
+                            </div>
+                            <a class="modal-contacts__link modal-contacts__link--mail" href="mailto:Flagman@fs44.ru" target="_blank">Flagman@fs44.ru</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__image">
+                    <img src="images/red-car.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-welcome" class="modal">
+        <div class="modal__wrapper">
+            <button class="modal-close__btn">
+                <img src="images/icons/close.svg" alt="Закрыть модальное окно">
+            </button>
+            <div class="modal__main">
+                <div class="modal__content">
+                    <p class="modal__title">Режим работы в праздничные дни</p>
+                    <p class="modal__paragraph">с 31.12.2025 г. по 05.01.2026 г. - выходные дни</p>
+                    <p class="modal__paragraph">с 06.01.2026 г. - работаем в обычном режиме</p>
+                </div>
+                <div class="modal__image">
+                    <img src="images/red-car.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

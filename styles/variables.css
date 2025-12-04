@@ -1,0 +1,21 @@
+:root{
+    --color-dark: #1F1F1F;
+    --color-light: #FFFFFF;
+    --color-accent-red: #C70000;
+    --color-accent-gray: #969696;
+
+    --font-family: 'Montserrat', sans-serif;
+
+    --border-radius: 16px;
+
+    --border-button: 6px;
+
+    --container-width: 1200px;
+    --container-padding-x: 20px;
+    --transition-duration: 0.2s;
+
+    --section-padding-y: 100px;
+    @media (max-width:480px) {
+        --section-padding-y: 50px;
+    }
+}

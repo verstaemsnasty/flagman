@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-light);
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.section{
+    padding: var(--section-padding-y) 0;
+}
+
+/*Бургер*/
+
+.burger-menu,
+.burger-btn{
+    display: none;
+}
+
+/*Кнопка*/
+
+.button{
+    display: inline-block;
+    background-color: var(--color-accent-red);
+    color: var(--color-light);
+    border: 1px solid var(--color-accent-red);
+    padding: 15px 20px;
+    border-radius: var(--border-button);
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background-color: transparent;
+        color: var(--color-accent-red);
+    }
+}
+
+.center-btn{
+    display: flex; 
+    justify-content: center;
+}
+
+/*Модальное окно*/
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(300px, 95vw, 622px);
+    max-width: 100%;
+    background: var(--color-light);
+    border-radius: 16px;
+    box-shadow: 0 0 25px 11px rgba(208, 208, 208, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal.show{
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal__wrapper{
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    max-width: 95vw; 
+}
+
+.modal-close__btn{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.modal__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal-welcome .modal__main{
+    align-items: start;
+}
+
+.modal__content{
+    position: relative;
+    width: 60%;
+    margin-top: 32px;
+}
+
+.modal__title{
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 24px;
+    width: 521px;
+    margin-bottom: 24px;
+}
+
+.modal__paragraph{
+    color: var(--color-dark);
+    font-weight: 400;
+}
+
+.modal__paragraph:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.modal-contacts__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.modal-contacts__item:last-child{
+    margin-bottom: 0;
+}
+
+.modal-contacts__item-icon{
+    margin-right: 16px;
+}
+
+.modal-contacts__link{
+    color: var(--color-dark);
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.modal-contacts__link--tg,
+.modal-contacts__link--mail{
+    text-decoration: underline;
+}
+
+.modal__image{
+    position: relative;
+    top: 0;
+    right: -30px;
+    width: 40%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(18, 18, 18, 0.4);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.modal-overlay.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*Заголовок секций*/
+
+.heading{
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.heading::first-letter{
+    color: var(--color-accent-red);
+}
+
+.heading__title{
+    margin-bottom: 8px;
+}
+
+.heading__subtitle{
+    color: var(--color-dark);
+    font-weight: 400;
+}
+
+/*Декоративные элементы*/
+
+.decor{
+    position: absolute;
+    z-index: 1;
+}
+
+.decor-gears{
+    top: -30px;;
+    left: -560px;
+    z-index: -1;
+}
+
+.decor-steam-1-hero{
+    top: -540px;
+    right: -800px;
+    z-index: -1;
+}
+
+.decor-steam-2-hero{
+    bottom: -300px;
+    left: -180px;
+    z-index: -1;
+}
+
+.decor-steam-about{
+    bottom: 140px;
+    right: -440px;
+    z-index: 3;
+}
+
+.decor-steam-work{
+    bottom: 70px;
+    left: -140px;
+    z-index: 3;
+}
+
+.decor-service{
+    max-width: 100%;
+    margin-left: 65px;
+    padding-right: 65px;
+}
+
+.decor-services{
+    position: absolute;
+    top: -80px;
+    right: 0;
+    max-width: 100%;
+    width: 250px;
+}
+
+.decor-steam-services{
+    bottom: 80px;
+    left: -160px;
+    z-index: -1;
+}
+
+.decor-steam1-testimonials{
+    top: -130px;
+    right: -210px;
+    z-index: -1;
+}
+
+.decor-steam2-testimonials{
+    bottom: -110px;
+    left: -160px;
+    z-index: -1;
+}
+
+.decor-steam-acc{
+    top: 117px;
+    right: -210px;
+    z-index: -1;
+}
+
+.decor-steam-consultation-cta{
+    bottom: -183px;
+    left: -360px;
+    z-index: -3;
+}
+
+/*Анимация*/
+
+.animation,
+.animation-heading,
+.animation-item,
+.animation-btn{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.animation.show,
+.animation-heading.show,
+.animation-item.show,
+.animation-btn.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animation-car{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
